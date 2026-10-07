@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Navbar from "./components/NavBar";
+import NavBar from "./components/NavBar";
 import GalleryPage from "./pages/GalleryPage";
 import ManagePage from "./pages/ManagePage";
 import { getProducts, createProduct, updateProduct, deleteProduct } from "./api";
@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800">
-      <Navbar view={view} onChangeView={setView} />
+      <NavBar view={view} onChangeView={setView} />
 
       {error && (
         <div className="mx-auto mt-6 max-w-6xl px-6">
